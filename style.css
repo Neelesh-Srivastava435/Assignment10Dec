@@ -1,0 +1,242 @@
+body{
+    width: 80vw;
+    margin:0px auto; 
+    background-color: lightgrey;  
+}
+header{
+    background-color: aliceblue;
+    padding:0px 20px;
+    
+}
+nav figure span:hover{
+    color:blue;
+}
+nav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+
+    top:0;
+    padding:5px 20px 5px 20px;
+    background-color: white;
+    height:40px;
+    
+    z-index: 99;
+}
+nav figure{
+    display:flex;
+    align-items: center;
+}
+nav img{
+    height:20px;
+    margin-left:10px;
+}
+nav h2{
+    margin-left:10px;
+}
+nav figure:nth-of-type(3) span{
+    margin-left:10px;
+}
+
+nav figure:nth-of-type(2){
+    flex-grow:1;    
+    justify-content: center;
+}
+nav figure:nth-of-type(2) span{
+    margin-left:40px;
+}
+nav img[src="images.jpeg"]{
+    height:30px;
+    border-radius: 50%;
+}
+
+nav+article{
+    margin:30px auto;
+    height:50px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius:10px;
+    overflow:hidden;
+    width:95%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+}
+nav+article figure{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+nav+article figure div{
+    margin:0px 10px;
+    padding:0px 5px;
+    border:1px dotted grey;
+    border-radius: 6px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+nav+article figure div span{
+        
+    color: transparent;
+  text-shadow: 0 0 0 blue;
+    margin-left:10px;
+    font-size: 0.6rem;
+}
+nav+article img{
+    height: 20px;
+    margin-right:10px;
+}
+ 
+nav+article figure:nth-of-type(1){
+    color:blue;
+}
+
+nav+article figure:nth-of-type(1){
+    border-right:1px dotted grey;
+}
+nav+article figure:nth-of-type(2){
+    border-right:1px dotted grey;
+}
+nav+article figure:nth-of-type(3){
+    border-right:1px dotted grey;
+}
+nav+article main{
+    flex-grow: 0;
+    background-color: blue;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    padding:5px 10px;
+    color:white;
+
+}
+.navBelow{
+    display: flex;
+}
+.navBelow article:nth-of-type(1){
+    flex-basis: 25%;
+}
+.navBelow article:nth-of-type(2){
+    flex-basis: 75%;
+}
+.navBelow article:nth-of-type(1) figure{
+    display: flex;
+    flex-direction: column;
+    padding:20px;
+    border-radius: 20px;
+    background-color: white;
+}
+.navBelow article:nth-of-type(1) figure:nth-of-type(1){
+    background-color: lightblue;
+}
+.navBelow article:nth-of-type(1) figure a{
+    align-self: flex-start;
+    padding:3px 10px;
+    background-color: rgb(96, 96, 166);
+    color:white;
+    border-radius: 20px;
+    margin:10px 0px;
+}
+.navBelow article:nth-of-type(1) figure h2{
+    font-size: 0.9rem;
+}
+.navBelow article:nth-of-type(1) figure label{
+    font-size: 0.9rem;
+    color:grey;
+}
+.navBelow article:nth-of-type(1) figure span{
+    font-size: 0.9rem;
+    color:black;
+}
+.navBelow article:nth-of-type(1) figure{
+    font-size: 16px;
+}
+.navBelow article:nth-of-type(1) figure section{
+    display: flex;
+    margin:5px 0px;
+    align-items: center;
+}
+.navBelow article:nth-of-type(1) figure section div{
+    flex-grow:1;
+}
+.navBelow article:nth-of-type(1) figure section span{
+    padding:3px 5px;
+    background-color: rgb(196, 191, 191);
+    align-items: center;
+    border-radius: 10px;
+}
+.Hnbelow{
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    margin-bottom:-20px;
+}
+
+.cards{
+    display: flex;
+    flex-direction:column ;
+    background-color: white;
+    padding:10px;
+    flex-basis: 26%;
+    margin:10px;
+    border-radius: 10px;
+}
+.cards h2{
+    margin:20px 0px;
+    font-weight: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:0.9rem;
+}
+.cards img{
+    height:40px;
+    border-radius: 9px;
+}
+.cards p{
+    margin-top:-10px;
+    color:grey;
+}
+.cards main{
+    display: flex;
+    justify-content: space-between;
+}
+.cards div:nth-of-type(1) a{
+ padding:2px 5px;
+ background-color:lightblue;
+ margin-right:10px;
+ color:blue;
+ font-size: 0.7rem;
+}
+.cards div:nth-of-type(2) {
+    display: flex;
+    justify-content: center;
+    margin-top:15px;
+}
+.cards div:nth-of-type(2) a{
+    flex-grow:1;
+    text-align: center;
+    border-radius: 9px;
+    margin:10px 5px;
+    padding:10px;
+    font-size:0.8rem;
+   
+}
+.cards div:nth-of-type(2) a:nth-of-type(1){
+    background-color: blue;
+    color:white;
+}
+
+.cards div:nth-of-type(2) a:nth-of-type(2){
+    background-color: lightgrey;
+    color:rgb(39, 38, 38);
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards:hover{
+    scale: 1.1;
+    transition: 0.5s;
+}
